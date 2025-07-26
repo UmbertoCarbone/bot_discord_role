@@ -32,8 +32,8 @@ Questa guida ti accompagnerà nella creazione e nell'esecuzione di un bot Discor
 1. Assicurati di avere [Python 3.8+](https://www.python.org/downloads/) installato.
 2. Installa le librerie necessarie aprendo il terminale nella cartella del progetto.
 3. Apri il terminale e inserisci :
-   ``` 
-   pip install discord.py python-dotenv 
+   ```
+   pip install discord.py python-dotenv
    ```
 4. Crea un file chiamato `.env` nella stessa cartella di `bot.py` e inserisci:
    ```env
@@ -54,6 +54,11 @@ Questa guida ti accompagnerà nella creazione e nell'esecuzione di un bot Discor
    ```powershell
    python bot.py
    ```
+
+> ℹ️ **Nota:**
+> Questo bot funziona solo in locale, cioè rimane attivo solo mentre il file viene eseguito sul tuo computer.
+> Se vuoi che il bot sia sempre online, dovrai ospitarlo su un server (ad esempio su un VPS, Heroku, Replit, ecc.).
+
 3. Se tutto è corretto, vedrai nel terminale il messaggio di avvio del bot.
 
 ## 7. Usa il bot su Discord
