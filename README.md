@@ -65,7 +65,7 @@ Questa guida ti accompagnerà nella creazione e nell'esecuzione di un bot Discor
 
 - Nel canale dove il bot ha accesso, digita il comando:
   ```
-  !role
+  /role oppure /roleinsegnanti
   ```
 - Il bot risponderà con i bottoni per selezionare i ruoli.
 - Clicca su un bottone per ricevere il ruolo corrispondente.
