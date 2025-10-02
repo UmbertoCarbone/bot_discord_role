@@ -3,12 +3,13 @@ from discord.ext import commands
 from discord.ui import View, Button
 from dotenv import load_dotenv
 import os
-
+from keep_alive import keep_alive 
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 intents = discord.Intents.default()
 intents.message_content = True
+intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents=intents, case_insensitive=True)
 
@@ -179,5 +180,8 @@ async def role_insegnanti_slash(interaction: discord.Interaction):
         view=view,
         ephemeral=True
     )
-
+# =========================
+# Avvia keep_alive e il bot
+# =========================
+keep_alive()
 bot.run(TOKEN)
